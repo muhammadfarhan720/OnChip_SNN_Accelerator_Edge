@@ -1,0 +1,838 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 29 11:36:52 2024
+# Process ID: 19872
+# Current directory: E:/advanced_analog_IC_Spring2024/Gauri_design.runs/synth_1
+# Command line: vivado.exe -log LSM_reservoir.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LSM_reservoir.tcl
+# Log file: E:/advanced_analog_IC_Spring2024/Gauri_design.runs/synth_1/LSM_reservoir.vds
+# Journal file: E:/advanced_analog_IC_Spring2024/Gauri_design.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source LSM_reservoir.tcl -notrace
+Command: synth_design -top LSM_reservoir -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 50020 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 496.621 ; gain = 186.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LSM_reservoir' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_reservoir.v:23]
+	Parameter Spike_neurons bound to: 15 - type: integer 
+	Parameter External_Ein bound to: 7 - type: integer 
+	Parameter E_reg_width bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Synaptic_Input_Processor' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'PISO' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:434]
+INFO: [Synth 8-6155] done synthesizing module 'PISO' (1#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:434]
+INFO: [Synth 8-6157] synthesizing module 'PISO_spike' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:345]
+INFO: [Synth 8-6155] done synthesizing module 'PISO_spike' (2#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:345]
+INFO: [Synth 8-6157] synthesizing module 'SRU_EP_EN_IP_IN' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/SRU_EP_EN_IP_IN.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SRU_EP_EN_IP_IN' (3#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/SRU_EP_EN_IP_IN.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SimpleAdder' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:265]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleAdder' (4#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:265]
+INFO: [Synth 8-6157] synthesizing module 'RightShifterEP' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:301]
+INFO: [Synth 8-6155] done synthesizing module 'RightShifterEP' (5#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:301]
+INFO: [Synth 8-6157] synthesizing module 'RightShifterIP' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:315]
+INFO: [Synth 8-6155] done synthesizing module 'RightShifterIP' (6#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:315]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:330]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (7#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:330]
+INFO: [Synth 8-6157] synthesizing module 'new_square_root' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Shiftright' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:277]
+INFO: [Synth 8-6155] done synthesizing module 'Shiftright' (8#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:277]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:297]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (9#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:297]
+INFO: [Synth 8-6157] synthesizing module 'difference' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:355]
+INFO: [Synth 8-6155] done synthesizing module 'difference' (10#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:355]
+INFO: [Synth 8-6157] synthesizing module 'Multiplier' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:457]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplier' (11#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:457]
+INFO: [Synth 8-6155] done synthesizing module 'new_square_root' (12#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Synaptic_Input_Processor' (13#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'OE_layer' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/OE_layer.sv:23]
+	Parameter Spike_neurons bound to: 15 - type: integer 
+	Parameter E_reg_width bound to: 15 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Synaptic_Input_Processor_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'PISO_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:379]
+INFO: [Synth 8-6155] done synthesizing module 'PISO_OE' (14#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:379]
+INFO: [Synth 8-6157] synthesizing module 'PISO_spike_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:294]
+INFO: [Synth 8-6155] done synthesizing module 'PISO_spike_OE' (15#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:294]
+INFO: [Synth 8-6157] synthesizing module 'SRU_EP_EN_IP_IN_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/SRU_EP_EN_IP_IN_OE.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SRU_EP_EN_IP_IN_OE' (16#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/SRU_EP_EN_IP_IN_OE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SimpleAdder_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:236]
+INFO: [Synth 8-6155] done synthesizing module 'SimpleAdder_OE' (17#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:236]
+INFO: [Synth 8-6157] synthesizing module 'RightShifterEP_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:248]
+INFO: [Synth 8-6155] done synthesizing module 'RightShifterEP_OE' (18#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:248]
+INFO: [Synth 8-6157] synthesizing module 'RightShifterIP_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:262]
+INFO: [Synth 8-6155] done synthesizing module 'RightShifterIP_OE' (19#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:262]
+INFO: [Synth 8-6157] synthesizing module 'Comparator_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:277]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator_OE' (20#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:277]
+INFO: [Synth 8-6157] synthesizing module 'LSM_OE_STDP' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'Shiftright_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:266]
+INFO: [Synth 8-6155] done synthesizing module 'Shiftright_OE' (21#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:266]
+INFO: [Synth 8-6157] synthesizing module 'MUX_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:290]
+INFO: [Synth 8-226] default block is never used [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:310]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_OE' (22#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:290]
+INFO: [Synth 8-6157] synthesizing module 'difference_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:406]
+INFO: [Synth 8-6155] done synthesizing module 'difference_OE' (23#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:406]
+INFO: [Synth 8-6157] synthesizing module 'MUX_time_difference_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:339]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_time_difference_OE' (24#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:339]
+INFO: [Synth 8-6157] synthesizing module 'Updated_calcium_concentration' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Updated_calcium_concentration.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Updated_calcium_concentration' (25#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Updated_calcium_concentration.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'weight_delta_mux_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:578]
+INFO: [Synth 8-6155] done synthesizing module 'weight_delta_mux_OE' (26#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:578]
+INFO: [Synth 8-6157] synthesizing module 'LTP_LUT_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:604]
+INFO: [Synth 8-6155] done synthesizing module 'LTP_LUT_OE' (27#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:604]
+INFO: [Synth 8-6157] synthesizing module 'LTD_LUT_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:634]
+INFO: [Synth 8-6155] done synthesizing module 'LTD_LUT_OE' (28#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:634]
+INFO: [Synth 8-6157] synthesizing module 'MUX_probability_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:371]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_probability_OE' (29#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:371]
+INFO: [Synth 8-6157] synthesizing module 'Random_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:517]
+INFO: [Synth 8-6155] done synthesizing module 'Random_OE' (30#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:517]
+INFO: [Synth 8-6157] synthesizing module 'difference_RNG_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:536]
+INFO: [Synth 8-6155] done synthesizing module 'difference_RNG_OE' (31#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:536]
+INFO: [Synth 8-6157] synthesizing module 'ControlledAdder_OE' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:550]
+INFO: [Synth 8-6155] done synthesizing module 'ControlledAdder_OE' (32#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:550]
+INFO: [Synth 8-6155] done synthesizing module 'LSM_OE_STDP' (33#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:24]
+WARNING: [Synth 8-3848] Net ES_minus_reg in module/entity Synaptic_Input_Processor_OE does not have driver. [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:94]
+WARNING: [Synth 8-3848] Net ES_plus_reg in module/entity Synaptic_Input_Processor_OE does not have driver. [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:91]
+INFO: [Synth 8-6155] done synthesizing module 'Synaptic_Input_Processor_OE' (34#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'OE_layer' (35#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/OE_layer.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'LSM_reservoir' (36#1) [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_reservoir.v:23]
+WARNING: [Synth 8-3331] design SRU_EP_EN_IP_IN_OE has unconnected port spike
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 561.000 ; gain = 251.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 561.000 ; gain = 251.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 561.000 ; gain = 251.203
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5546] ROM "weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "weight_update_probability" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "weight_update_probability" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:421]
+WARNING: [Synth 8-327] inferring latch for variable 'calcium_status_reg' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Updated_calcium_concentration.sv:115]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 583.344 ; gain = 273.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'Exhibitory_0' (Synaptic_Input_Processor) to 'Exhibitory_2'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_0' (Synaptic_Input_Processor) to 'Exhibitory_4'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_0' (Synaptic_Input_Processor) to 'Exhibitory_6'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_1' (Synaptic_Input_Processor) to 'Exhibitory_3'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_1' (Synaptic_Input_Processor) to 'Exhibitory_5'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_1' (Synaptic_Input_Processor) to 'Exhibitory_7'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_8' (Synaptic_Input_Processor) to 'Exhibitory_10'
+INFO: [Synth 8-223] decloning instance 'Exhibitory_9' (Synaptic_Input_Processor) to 'Exhibitory_11'
+INFO: [Synth 8-223] decloning instance 'Inhibitory_12' (Synaptic_Input_Processor) to 'Inhibitory_14'
+INFO: [Synth 8-223] decloning instance 'Inhibitory_13' (Synaptic_Input_Processor) to 'Inhibitory_15'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 32    
+	   3 Input     16 Bit       Adders := 16    
+	   5 Input     16 Bit       Adders := 8     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 32    
++---XORs : 
+	   4 Input      1 Bit         XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 459   
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 50    
+	                3 Bit    Registers := 6     
+	                1 Bit    Registers := 42    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 210   
+	   3 Input     16 Bit        Muxes := 96    
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	  14 Input      8 Bit        Muxes := 2     
+	  16 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	  29 Input      4 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 192   
+	  14 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 12    
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 320   
+	   4 Input      1 Bit        Muxes := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LSM_reservoir 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module PISO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 17    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 3     
+Module PISO_spike 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module SRU_EP_EN_IP_IN 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module SimpleAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module Shiftright 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module difference 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 2     
+Module Multiplier 
+Detailed RTL Component Info : 
++---Muxes : 
+	  29 Input      4 Bit        Muxes := 1     
+Module new_square_root 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 16    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 32    
+Module Synaptic_Input_Processor 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+Module PISO_OE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 17    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module PISO_spike_OE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module SRU_EP_EN_IP_IN_OE 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     16 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module SimpleAdder_OE 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+Module Shiftright_OE 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module difference_OE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX_time_difference_OE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Updated_calcium_concentration 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module weight_delta_mux_OE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module LTP_LUT_OE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module LTD_LUT_OE 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      8 Bit        Muxes := 1     
+Module MUX_probability_OE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module Random_OE 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ControlledAdder_OE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+Module LSM_OE_STDP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 17    
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 32    
+Module Synaptic_Input_Processor_OE 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'Exhibitory_1/write_d1_reg' into 'Exhibitory_0/write_d1_reg' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv:178]
+INFO: [Synth 8-5546] ROM "mymultiplier/weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mymultiplier/weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mymultiplier/weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mymultiplier/weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mymultiplier/weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mymultiplier/weight_new3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "dummy_LTD/weight_update_probability" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "dummy_LTD/weight_update_probability" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3886] merging instance 'output_layer/Exhibitory_1/Ein_PISO/Q_reg[0]' (FDR_1) to 'output_layer/Exhibitory_0/Ein_PISO/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\output_layer/Exhibitory_0/Ein_PISO/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/weight_new2_reg[0] )
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][7]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][8]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][8]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][9]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][9]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][10]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][10]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][11]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][11]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][12]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[3][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[4][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[5][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[6][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[7][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[8][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[9][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[10][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[11][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[12][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[13][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[14][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][12]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[15][13]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][13]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[0][14]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][13]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[1][14]'
+INFO: [Synth 8-3886] merging instance 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][13]' (FDRE_1) to 'Synaptic_Input_Processor:/new_square/dataArray_reg[2][14]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[3][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[4][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[5][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[6][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[7][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[8][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[10][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[11][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[13][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[15][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[5][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[6][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[7][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[8][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[9][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[10][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[11][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[13][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/dataArray_reg[15][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\piso_weight/shift_reg_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\new_square/weight_old_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Synaptic_Input_Processor:/\piso_weight/shift_reg_reg[0][0] )
+WARNING: [Synth 8-3332] Sequential element (comparator1/data_reg[2]) is unused and will be removed from module LSM_OE_STDP__1.
+WARNING: [Synth 8-3332] Sequential element (comparator1/data_reg[1]) is unused and will be removed from module LSM_OE_STDP__1.
+WARNING: [Synth 8-3332] Sequential element (comparator1/data_reg[0]) is unused and will be removed from module LSM_OE_STDP__1.
+WARNING: [Synth 8-3332] Sequential element (comparator1/data_reg[2]) is unused and will be removed from module LSM_OE_STDP.
+WARNING: [Synth 8-3332] Sequential element (comparator1/data_reg[1]) is unused and will be removed from module LSM_OE_STDP.
+WARNING: [Synth 8-3332] Sequential element (comparator1/data_reg[0]) is unused and will be removed from module LSM_OE_STDP.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Exhibitory_8/\Ein_PISO/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Exhibitory_9/\Ein_PISO/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inhibitory_12/\Ein_PISO/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inhibitory_13/\Ein_PISO/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Exhibitory_1/\Ein_PISO/Q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Exhibitory_0/\Ein_PISO/Q_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 806.719 ; gain = 496.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 807.551 ; gain = 497.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 831.730 ; gain = 521.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   222|
+|3     |LUT1   |    56|
+|4     |LUT2   |   817|
+|5     |LUT3   |   506|
+|6     |LUT4   |   360|
+|7     |LUT5   |   986|
+|8     |LUT6   |  1226|
+|9     |MUXF7  |    94|
+|10    |MUXF8  |    36|
+|11    |FDRE   |  2809|
+|12    |FDSE   |    40|
+|13    |LD     |    28|
+|14    |IBUF   |    33|
+|15    |OBUF   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------------+------+
+|      |Instance            |Module                           |Cells |
++------+--------------------+---------------------------------+------+
+|1     |top                 |                                 |  7216|
+|2     |  Exhibitory_0      |Synaptic_Input_Processor         |   757|
+|3     |    ES_adder        |SimpleAdder_103                  |     4|
+|4     |    Ein_PISO        |PISO_spike_104                   |    39|
+|5     |    ISadder         |SimpleAdder_105                  |    20|
+|6     |    SRU             |SRU_EP_EN_IP_IN_106              |   266|
+|7     |    new_square      |new_square_root_107              |   279|
+|8     |      eleven        |Shiftright_110                   |     3|
+|9     |      fifteen       |Shiftright_111                   |     3|
+|10    |      five          |Shiftright_112                   |     3|
+|11    |      fourteen      |Shiftright_113                   |     3|
+|12    |      mymultiplier  |Multiplier_114                   |     2|
+|13    |      nine          |Shiftright_115                   |     3|
+|14    |      one           |Shiftright_116                   |     3|
+|15    |      six           |Shiftright_117                   |     9|
+|16    |      sixteen       |Shiftright_118                   |    13|
+|17    |      ten           |Shiftright_119                   |     3|
+|18    |      thirteen      |Shiftright_120                   |     3|
+|19    |      twelve        |Shiftright_121                   |    20|
+|20    |      two           |Shiftright_122                   |     3|
+|21    |      zero          |Shiftright_123                   |    14|
+|22    |    piso_spike      |PISO_spike_108                   |    45|
+|23    |    piso_weight     |PISO_109                         |    87|
+|24    |  Exhibitory_1      |Synaptic_Input_Processor_0       |   745|
+|25    |    ES_adder        |SimpleAdder_82                   |     4|
+|26    |    Ein_PISO        |PISO_spike_83                    |    39|
+|27    |    ISadder         |SimpleAdder_84                   |    20|
+|28    |    SRU             |SRU_EP_EN_IP_IN_85               |   266|
+|29    |    new_square      |new_square_root_86               |   267|
+|30    |      eleven        |Shiftright_89                    |     3|
+|31    |      fifteen       |Shiftright_90                    |     3|
+|32    |      five          |Shiftright_91                    |     1|
+|33    |      fourteen      |Shiftright_92                    |     3|
+|34    |      mymultiplier  |Multiplier_93                    |     2|
+|35    |      nine          |Shiftright_94                    |     3|
+|36    |      one           |Shiftright_95                    |     1|
+|37    |      six           |Shiftright_96                    |     3|
+|38    |      sixteen       |Shiftright_97                    |    13|
+|39    |      ten           |Shiftright_98                    |     3|
+|40    |      thirteen      |Shiftright_99                    |     3|
+|41    |      twelve        |Shiftright_100                   |    20|
+|42    |      two           |Shiftright_101                   |     1|
+|43    |      zero          |Shiftright_102                   |    14|
+|44    |    piso_spike      |PISO_spike_87                    |    45|
+|45    |    piso_weight     |PISO_88                          |    87|
+|46    |  Exhibitory_8      |Synaptic_Input_Processor_1       |   708|
+|47    |    ES_adder        |SimpleAdder_65                   |     4|
+|48    |    Ein_PISO        |PISO_spike_66                    |    39|
+|49    |    ISadder         |SimpleAdder_67                   |    20|
+|50    |    SRU             |SRU_EP_EN_IP_IN_68               |   266|
+|51    |    new_square      |new_square_root_69               |   221|
+|52    |      eleven        |Shiftright_72                    |     1|
+|53    |      fifteen       |Shiftright_73                    |     1|
+|54    |      fourteen      |Shiftright_74                    |     1|
+|55    |      mymultiplier  |Multiplier_75                    |     2|
+|56    |      nine          |Shiftright_76                    |     1|
+|57    |      sixteen       |Shiftright_77                    |     4|
+|58    |      ten           |Shiftright_78                    |     1|
+|59    |      thirteen      |Shiftright_79                    |     1|
+|60    |      twelve        |Shiftright_80                    |     7|
+|61    |      zero          |Shiftright_81                    |     8|
+|62    |    piso_spike      |PISO_spike_70                    |    45|
+|63    |    piso_weight     |PISO_71                          |    96|
+|64    |  Exhibitory_9      |Synaptic_Input_Processor_2       |   711|
+|65    |    ES_adder        |SimpleAdder_46                   |     4|
+|66    |    Ein_PISO        |PISO_spike_47                    |    39|
+|67    |    ISadder         |SimpleAdder_48                   |    20|
+|68    |    SRU             |SRU_EP_EN_IP_IN_49               |   266|
+|69    |    new_square      |new_square_root_50               |   227|
+|70    |      eleven        |Shiftright_53                    |     1|
+|71    |      fifteen       |Shiftright_54                    |     1|
+|72    |      fourteen      |Shiftright_55                    |     1|
+|73    |      mymultiplier  |Multiplier_56                    |     2|
+|74    |      nine          |Shiftright_57                    |     1|
+|75    |      one           |Shiftright_58                    |     1|
+|76    |      sixteen       |Shiftright_59                    |     4|
+|77    |      ten           |Shiftright_60                    |     1|
+|78    |      thirteen      |Shiftright_61                    |     1|
+|79    |      twelve        |Shiftright_62                    |     9|
+|80    |      two           |Shiftright_63                    |     1|
+|81    |      zero          |Shiftright_64                    |    10|
+|82    |    piso_spike      |PISO_spike_51                    |    45|
+|83    |    piso_weight     |PISO_52                          |    93|
+|84    |  Inhibitory_12     |Synaptic_Input_Processor_3       |   695|
+|85    |    ES_adder        |SimpleAdder_35                   |     4|
+|86    |    Ein_PISO        |PISO_spike_36                    |    39|
+|87    |    ISadder         |SimpleAdder_37                   |    20|
+|88    |    SRU             |SRU_EP_EN_IP_IN_38               |   266|
+|89    |    new_square      |new_square_root_39               |   208|
+|90    |      mymultiplier  |Multiplier_42                    |     2|
+|91    |      one           |Shiftright_43                    |     2|
+|92    |      two           |Shiftright_44                    |     2|
+|93    |      zero          |Shiftright_45                    |     8|
+|94    |    piso_spike      |PISO_spike_40                    |    45|
+|95    |    piso_weight     |PISO_41                          |    96|
+|96    |  Inhibitory_13     |Synaptic_Input_Processor_4       |   692|
+|97    |    ES_adder        |SimpleAdder                      |     4|
+|98    |    Ein_PISO        |PISO_spike                       |    39|
+|99    |    ISadder         |SimpleAdder_31                   |    20|
+|100   |    SRU             |SRU_EP_EN_IP_IN                  |   266|
+|101   |    new_square      |new_square_root                  |   208|
+|102   |      mymultiplier  |Multiplier                       |     2|
+|103   |      one           |Shiftright                       |     1|
+|104   |      two           |Shiftright_33                    |     1|
+|105   |      zero          |Shiftright_34                    |    10|
+|106   |    piso_spike      |PISO_spike_32                    |    45|
+|107   |    piso_weight     |PISO                             |    93|
+|108   |  output_layer      |OE_layer                         |  2866|
+|109   |    Exhibitory_0    |Synaptic_Input_Processor_OE      |  1458|
+|110   |      Ein_PISO      |PISO_spike_OE_13                 |    45|
+|111   |      ISadder       |SimpleAdder_OE_14                |    13|
+|112   |      OE_STDP       |LSM_OE_STDP_15                   |   948|
+|113   |        ALU         |ControlledAdder_OE_19            |     4|
+|114   |        calcium     |Updated_calcium_concentration_20 |    56|
+|115   |        comparator1 |difference_OE_21                 |    94|
+|116   |        comparator2 |difference_RNG_OE_22             |     1|
+|117   |        five        |Shiftright_OE_23                 |     9|
+|118   |        nine        |Shiftright_OE_24                 |     9|
+|119   |        one         |Shiftright_OE_25                 |     9|
+|120   |        rng         |Random_OE_26                     |    10|
+|121   |        six         |Shiftright_OE_27                 |     9|
+|122   |        ten         |Shiftright_OE_28                 |    10|
+|123   |        two         |Shiftright_OE_29                 |    45|
+|124   |        zero        |Shiftright_OE_30                 |    28|
+|125   |      SRU           |SRU_EP_EN_IP_IN_OE_16            |   130|
+|126   |      piso_spike    |PISO_spike_OE_17                 |    46|
+|127   |      piso_weight   |PISO_OE_18                       |   254|
+|128   |    Exhibitory_1    |Synaptic_Input_Processor_OE_5    |  1408|
+|129   |      Ein_PISO      |PISO_spike_OE                    |    45|
+|130   |      ISadder       |SimpleAdder_OE                   |    13|
+|131   |      OE_STDP       |LSM_OE_STDP                      |   898|
+|132   |        ALU         |ControlledAdder_OE               |     4|
+|133   |        calcium     |Updated_calcium_concentration    |    58|
+|134   |        comparator1 |difference_OE                    |    94|
+|135   |        comparator2 |difference_RNG_OE                |     1|
+|136   |        five        |Shiftright_OE                    |     4|
+|137   |        nine        |Shiftright_OE_7                  |     4|
+|138   |        one         |Shiftright_OE_8                  |     4|
+|139   |        rng         |Random_OE                        |    10|
+|140   |        six         |Shiftright_OE_9                  |     4|
+|141   |        ten         |Shiftright_OE_10                 |     4|
+|142   |        two         |Shiftright_OE_11                 |    20|
+|143   |        zero        |Shiftright_OE_12                 |    28|
+|144   |      SRU           |SRU_EP_EN_IP_IN_OE               |   130|
+|145   |      piso_spike    |PISO_spike_OE_6                  |    46|
+|146   |      piso_weight   |PISO_OE                          |   255|
++------+--------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 833.648 ; gain = 523.852
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 380 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 882.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 28 instances were transformed.
+  LD => LDCE: 28 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+248 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 882.609 ; gain = 579.676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 882.609 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/advanced_analog_IC_Spring2024/Gauri_design.runs/synth_1/LSM_reservoir.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LSM_reservoir_utilization_synth.rpt -pb LSM_reservoir_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 11:37:26 2024...

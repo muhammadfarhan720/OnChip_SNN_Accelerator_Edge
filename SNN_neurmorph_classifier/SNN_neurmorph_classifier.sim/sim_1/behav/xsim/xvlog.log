@@ -1,0 +1,47 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSM_OE_STDP
+INFO: [VRFC 10-311] analyzing module Shiftright_OE
+INFO: [VRFC 10-311] analyzing module MUX_OE
+INFO: [VRFC 10-311] analyzing module MUX_time_difference_OE
+INFO: [VRFC 10-311] analyzing module MUX_probability_OE
+INFO: [VRFC 10-311] analyzing module difference_OE
+INFO: [VRFC 10-311] analyzing module Random_OE
+INFO: [VRFC 10-311] analyzing module difference_RNG_OE
+INFO: [VRFC 10-311] analyzing module ControlledAdder_OE
+INFO: [VRFC 10-311] analyzing module weight_delta_mux_OE
+INFO: [VRFC 10-311] analyzing module LTP_LUT_OE
+INFO: [VRFC 10-311] analyzing module LTD_LUT_OE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/OE_layer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OE_layer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/SRU_EP_EN_IP_IN.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SRU_EP_EN_IP_IN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/SRU_EP_EN_IP_IN_OE.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SRU_EP_EN_IP_IN_OE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Synaptic_Input_Processor
+INFO: [VRFC 10-311] analyzing module SimpleAdder
+INFO: [VRFC 10-311] analyzing module RightShifterEP
+INFO: [VRFC 10-311] analyzing module RightShifterIP
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-311] analyzing module PISO_spike
+INFO: [VRFC 10-311] analyzing module PISO
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor_OE.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Synaptic_Input_Processor_OE
+INFO: [VRFC 10-311] analyzing module SimpleAdder_OE
+INFO: [VRFC 10-311] analyzing module RightShifterEP_OE
+INFO: [VRFC 10-311] analyzing module RightShifterIP_OE
+INFO: [VRFC 10-311] analyzing module Comparator_OE
+INFO: [VRFC 10-311] analyzing module PISO_spike_OE
+INFO: [VRFC 10-311] analyzing module PISO_OE
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Updated_calcium_concentration.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Updated_calcium_concentration
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/new/new_square_root.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module new_square_root
+INFO: [VRFC 10-311] analyzing module Shiftright
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-311] analyzing module difference
+INFO: [VRFC 10-311] analyzing module Multiplier
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_reservoir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LSM_reservoir
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/advanced_analog_IC_Spring2024/Gauri_design.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

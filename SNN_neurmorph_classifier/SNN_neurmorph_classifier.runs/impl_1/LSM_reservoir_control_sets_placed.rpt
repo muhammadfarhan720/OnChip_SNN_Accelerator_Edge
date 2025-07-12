@@ -1,0 +1,181 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Apr 29 11:39:11 2024
+| Host         : Ruizhe running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file LSM_reservoir_control_sets_placed.rpt
+| Design       : LSM_reservoir
+| Device       : xc7z020
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   103 |
+|    Minimum number of control sets                        |   103 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   203 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   103 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    30 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |    32 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             651 |          243 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             482 |          114 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1744 |          571 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------------+-----------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|                    Clock Signal                   |                             Enable Signal                             |                         Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++---------------------------------------------------+-----------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+|  output_layer/Exhibitory_1/OE_STDP/calcium/ST_and |                                                                       |                                                                  |                2 |              2 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_0/piso_spike/shift_count[3]_i_1__12_n_0  |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Inhibitory_12/piso_weight/shift_count[3]_i_1__21_n_0             |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Inhibitory_13/piso_weight/shift_count[3]_i_1__22_n_0             |                1 |              4 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_8/piso_weight/serial_out[14]_i_1__1_n_0                    | reset_IBUF                                                       |                4 |              4 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_1/piso_weight/serial_out[14]_i_1__0_n_0                    | reset_IBUF                                                       |                4 |              4 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_13/piso_weight/serial_out[14]_i_1__4_n_0                   | reset_IBUF                                                       |                4 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Inhibitory_12/Ein_PISO/shift_count[3]_i_1__8_n_0                 |                1 |              4 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_0/piso_weight/serial_out[14]_i_1_n_0                       | reset_IBUF                                                       |                3 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_0/piso_spike/shift_count[3]_i_1_n_0                   |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Inhibitory_13/Ein_PISO/shift_count[3]_i_1__10_n_0                |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_0/Ein_PISO/shift_count[3]_i_1__13_n_0    |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_1/piso_spike/shift_count[3]_i_1__1_n_0                |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Inhibitory_12/piso_spike/shift_count[3]_i_1__7_n_0               |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_0/piso_weight/shift_count[3]_i_1__11_n_0 |                1 |              4 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_9/piso_weight/serial_out[14]_i_1__2_n_0                    | reset_IBUF                                                       |                4 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_0/piso_weight/shift_count[3]_i_1__17_n_0              |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_0/Ein_PISO/shift_count[3]_i_1__0_n_0                  |                1 |              4 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_12/piso_weight/serial_out[14]_i_1__3_n_0                   | reset_IBUF                                                       |                3 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_1/piso_weight/shift_count[3]_i_1__14_n_0 |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_1/Ein_PISO/shift_count[3]_i_1__16_n_0    |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_1/piso_spike/shift_count[3]_i_1__15_n_0  |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_1/piso_weight/shift_count[3]_i_1__18_n_0              |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_1/Ein_PISO/shift_count[3]_i_1__2_n_0                  |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_8/piso_weight/shift_count[3]_i_1__19_n_0              |                2 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_8/Ein_PISO/shift_count[3]_i_1__4_n_0                  |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_8/piso_spike/shift_count[3]_i_1__3_n_0                |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_9/piso_weight/shift_count[3]_i_1__20_n_0              |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_9/Ein_PISO/shift_count[3]_i_1__6_n_0                  |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Exhibitory_9/piso_spike/shift_count[3]_i_1__5_n_0                |                1 |              4 |
+| ~clock_IBUF_BUFG                                  |                                                                       | Inhibitory_13/piso_spike/shift_count[3]_i_1__9_n_0               |                1 |              4 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/calcium/calcium_level[9]_i_1__0_n_0 | reset_IBUF                                                       |                3 |             10 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/calcium/calcium_level[9]_i_1_n_0    | reset_IBUF                                                       |                3 |             10 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/piso_weight/serial_out[10]_i_1__0_n_0       | reset_IBUF                                                       |                9 |             11 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/piso_weight/sel                             | reset_IBUF                                                       |               10 |             11 |
+|  output_layer/Exhibitory_0/OE_STDP/zero/E[0]      |                                                                       |                                                                  |                5 |             13 |
+|  output_layer/Exhibitory_1/OE_STDP/zero/E[0]      |                                                                       |                                                                  |                4 |             13 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[6][15]_i_1_n_0            | reset_IBUF                                                       |                9 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[2][15]_i_1_n_0            | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[4][15]_i_1_n_0            | reset_IBUF                                                       |                8 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[3][15]_i_1_n_0            | reset_IBUF                                                       |                8 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[0][15]_i_1_n_0            | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[12][15]_i_1_n_0           | reset_IBUF                                                       |                8 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[10][15]_i_1_n_0           | reset_IBUF                                                       |                9 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[11][15]_i_1_n_0           | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[13][15]_i_1_n_0           | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[14][15]_i_1_n_0           | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[15][15]_i_1_n_0           | reset_IBUF                                                       |                8 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[1][15]_i_1_n_0            | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[8][15]_i_1_n_0            | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[9][15]_i_1_n_0            | reset_IBUF                                                       |               10 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[0][15]_i_1__0_n_0         | reset_IBUF                                                       |                5 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[12][15]_i_1__0_n_0        | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[10][15]_i_1__0_n_0        | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[15][15]_i_1__0_n_0        | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[1][15]_i_1__0_n_0         | reset_IBUF                                                       |                5 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[13][15]_i_1__0_n_0        | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[14][15]_i_1__0_n_0        | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[4][15]_i_1__0_n_0         | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[3][15]_i_1__0_n_0         | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[2][15]_i_1__0_n_0         | reset_IBUF                                                       |                8 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[11][15]_i_1__0_n_0        | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[6][15]_i_1__0_n_0         | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[7][15]_i_1__0_n_0         | reset_IBUF                                                       |                7 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[8][15]_i_1__0_n_0         | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[9][15]_i_1__0_n_0         | reset_IBUF                                                       |                9 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[7][15]_i_1_n_0            | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/OE_STDP/dataArray[5][15]_i_1_n_0            | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/OE_STDP/dataArray[5][15]_i_1__0_n_0         | reset_IBUF                                                       |                6 |             15 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_1/sum_reg[15]_i_1__0_n_0                 |                4 |             16 |
+|  clock_IBUF_BUFG                                  |                                                                       | Exhibitory_8/sum_reg[15]_i_1__3_n_0                              |                4 |             16 |
+| ~clock_IBUF_BUFG                                  |                                                                       | output_layer/Exhibitory_0/sum_reg[15]_i_1_n_0                    |                4 |             16 |
+|  clock_IBUF_BUFG                                  |                                                                       | Exhibitory_1/sum_reg[15]_i_1__2_n_0                              |                4 |             16 |
+|  clock_IBUF_BUFG                                  |                                                                       | Exhibitory_0/sum_reg[15]_i_1__1_n_0                              |                4 |             16 |
+|  clock_IBUF_BUFG                                  |                                                                       | Inhibitory_12/sum_reg[15]_i_1__5_n_0                             |                4 |             16 |
+|  clock_IBUF_BUFG                                  |                                                                       | Exhibitory_9/sum_reg[15]_i_1__4_n_0                              |                4 |             16 |
+|  clock_IBUF_BUFG                                  |                                                                       | Inhibitory_13/sum_reg[15]_i_1__6_n_0                             |                4 |             16 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_1/Ein_PISO/E[0]                                            | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_1/Ein_PISO/Qout_reg_0[0]                                   | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_0/Ein_PISO/Qout_reg_0[0]                                   | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_8/Ein_PISO/E[0]                                            | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_8/Ein_PISO/Qout_reg_0[0]                                   | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_0/Ein_PISO/E[0]                                            | reset_IBUF                                                       |               10 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_9/Ein_PISO/E[0]                                            | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_9/Ein_PISO/Qout_reg_0[0]                                   | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/Ein_PISO/E[0]                               | reset_IBUF                                                       |                8 |             32 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_12/Ein_PISO/E[0]                                           | reset_IBUF                                                       |               10 |             32 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_12/Ein_PISO/Qout_reg_0[0]                                  | reset_IBUF                                                       |               10 |             32 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/Ein_PISO/E[0]                               | reset_IBUF                                                       |                8 |             32 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_13/Ein_PISO/E[0]                                           | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_13/Ein_PISO/Qout_reg_0[0]                                  | reset_IBUF                                                       |               11 |             32 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_9/piso_weight/flush_reg_n_0                                | reset_IBUF                                                       |                7 |             48 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_1/piso_weight/flush_reg_n_0                                | reset_IBUF                                                       |                7 |             48 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_12/piso_weight/flush_reg_n_0                               | reset_IBUF                                                       |                9 |             48 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_8/piso_weight/flush_reg_n_0                                | reset_IBUF                                                       |                9 |             48 |
+| ~clock_IBUF_BUFG                                  | Inhibitory_13/piso_weight/flush_reg_n_0                               | reset_IBUF                                                       |                9 |             48 |
+| ~clock_IBUF_BUFG                                  | Exhibitory_0/piso_weight/flush_reg_0                                  | reset_IBUF                                                       |               12 |             54 |
+|  clock_IBUF_BUFG                                  |                                                                       |                                                                  |               23 |             68 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/write_d1                                    | reset_IBUF                                                       |               28 |            104 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_0/piso_weight/flush_reg_n_0                   | reset_IBUF                                                       |               35 |            176 |
+| ~clock_IBUF_BUFG                                  | output_layer/Exhibitory_1/piso_weight/flush_reg_n_0                   | reset_IBUF                                                       |               41 |            176 |
+| ~clock_IBUF_BUFG                                  |                                                                       | reset_IBUF                                                       |               57 |            258 |
+| ~clock_IBUF_BUFG                                  |                                                                       |                                                                  |              209 |            555 |
++---------------------------------------------------+-----------------------------------------------------------------------+------------------------------------------------------------------+------------------+----------------+
+
+

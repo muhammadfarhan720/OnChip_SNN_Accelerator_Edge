@@ -1,0 +1,50 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b97552b91f0d40c1b0a69c46bc14f548 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LSM_reservoir_behav xil_defaultlib.LSM_reservoir xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 4 for port 'weight_new' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/Synaptic_Input_Processor.sv:190]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'mux_in_1' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:163]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'mux_in_1' [E:/advanced_analog_IC_Spring2024/Gauri_design.srcs/sources_1/imports/imports/new/LSM_OE_STDP.sv:165]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PISO
+Compiling module xil_defaultlib.PISO_spike
+Compiling module xil_defaultlib.SRU_EP_EN_IP_IN
+Compiling module xil_defaultlib.SimpleAdder
+Compiling module xil_defaultlib.RightShifterEP
+Compiling module xil_defaultlib.RightShifterIP
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.Shiftright
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.difference
+Compiling module xil_defaultlib.Multiplier
+Compiling module xil_defaultlib.new_square_root
+Compiling module xil_defaultlib.Synaptic_Input_Processor
+Compiling module xil_defaultlib.PISO_OE
+Compiling module xil_defaultlib.PISO_spike_OE
+Compiling module xil_defaultlib.SRU_EP_EN_IP_IN_OE
+Compiling module xil_defaultlib.SimpleAdder_OE
+Compiling module xil_defaultlib.RightShifterEP_OE
+Compiling module xil_defaultlib.RightShifterIP_OE
+Compiling module xil_defaultlib.Comparator_OE
+Compiling module xil_defaultlib.Shiftright_OE
+Compiling module xil_defaultlib.MUX_OE
+Compiling module xil_defaultlib.difference_OE
+Compiling module xil_defaultlib.MUX_time_difference_OE
+Compiling module xil_defaultlib.Updated_calcium_concentration
+Compiling module xil_defaultlib.weight_delta_mux_OE
+Compiling module xil_defaultlib.LTP_LUT_OE
+Compiling module xil_defaultlib.LTD_LUT_OE
+Compiling module xil_defaultlib.MUX_probability_OE
+Compiling module xil_defaultlib.Random_OE
+Compiling module xil_defaultlib.difference_RNG_OE
+Compiling module xil_defaultlib.ControlledAdder_OE
+Compiling module xil_defaultlib.LSM_OE_STDP
+Compiling module xil_defaultlib.Synaptic_Input_Processor_OE
+Compiling module xil_defaultlib.OE_layer
+Compiling module xil_defaultlib.LSM_reservoir
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LSM_reservoir_behav
