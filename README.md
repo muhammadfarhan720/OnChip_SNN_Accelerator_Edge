@@ -3,6 +3,6 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 ## 📄 Project Presentation (PDF)
 
-Click the image below to view the full report:
+Click the image below briefly overview the project:
 
 [![Project Report Preview](https://github.com/muhammadfarhan720/OnChip_SNN_Accelerator_Edge/blob/main/image/project_thumbnail.jpg))](https://github.com/muhammadfarhan720/OnChip_SNN_Accelerator_Edge/blob/main/Neuromorphic_accelerator_presentation.pdf))
