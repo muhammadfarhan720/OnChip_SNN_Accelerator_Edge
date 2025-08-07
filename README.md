@@ -16,6 +16,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
   - **Readout Layer**:
     - Contains 2 output neurons
     - Each neuron includes a **supervised learning engine** for on-chip training
+    - For a given sample spike train, whichever of the readout neuron spikes most frequently, that associated target label is chosen
 
 ## Functions
 
