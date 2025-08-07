@@ -6,20 +6,31 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 ## Structure
 
---> This repo contains a full spiking neural network architecture that consists of 3 layers. 
---> The input layer has one input neuron with the size of a word (16 bit)
---> The hidden layer contains 16 recurrent neurons, all of which also have unsupervised weight update learning engine from on-chip training inside them
---> The readout layer contains two output neurons where each neuron contains a supervised weight update learning engine for on-chip supervised training
+- This repo contains a complete **Spiking Neural Network (SNN)** architecture with 3 layers:
+  - **Input Layer**:
+    - Contains one input neuron
+    - Each input is 16 bits wide (word size)
+  - **Hidden Layer**:
+    - Contains 16 recurrent neurons
+    - Each neuron includes an **on-chip unsupervised learning engine** for weight updates
+  - **Readout Layer**:
+    - Contains 2 output neurons
+    - Each neuron includes a **supervised learning engine** for on-chip training
 
-## Functions :
+## Functions
 
---> The input neuron sends input spike trains to the hidden layer
---> The hidden layer neurons start spiking after receiving input spikes and send their responses to readout and their own reccurent layer neurons
---> The hidden layer weights are updated for certain iteration using Unsupervised STDP learning
---> The hidden layer weights are frozen
---> The extracted states from the converged weight hidden layer are then sent to readout layer
---> The readout layer weights are trained using supervised STDP
---> Finally both the hidden and readout layer weights are frozen and the network is ready for inference
+- The input neuron encodes and sends spike trains to the hidden layer
+- Hidden layer neurons:
+  - Begin spiking in response to input spikes
+  - Send spike responses to both the readout layer and recurrently to other hidden neurons
+- Hidden layer weights are updated over a set number of iterations using **unsupervised STDP**
+- Once converged, the hidden layer weights are **frozen**
+- The final spiking states from the hidden layer are forwarded to the readout layer
+- The readout layer is trained using **supervised STDP**
+- After training:
+  - Both hidden and readout weights are frozen
+  - The SNN is ready for **inference**
+
 
 
 ## 📄 Project Presentation (PDF)
