@@ -14,7 +14,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
     - Contains 16 recurrent neurons
     - Each neuron includes an **on-chip unsupervised learning engine** for weight updates
   - **Readout Layer**:
-    - Contains 2 output neurons
+    - Contains 2 output neurons for binary classification
     - Each neuron includes a **supervised learning engine** for on-chip training
     - For a given sample spike train, whichever of the readout neuron spikes most frequently, that associated target label is chosen as predicted label
 
