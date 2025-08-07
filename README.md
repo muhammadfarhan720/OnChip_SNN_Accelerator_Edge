@@ -27,7 +27,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 - Hidden layer weights are updated over a set number of iterations using **unsupervised STDP**
 - Once converged, the hidden layer weights are **frozen**
 - The final spiking states from the hidden layer are forwarded to the readout layer
-- The readout layer is trained using **supervised STDP**
+- The readout layer is trained using **supervised STDP** with teacher signals
 - After training:
   - Both hidden and readout weights are frozen
   - The SNN is ready for **inference**
