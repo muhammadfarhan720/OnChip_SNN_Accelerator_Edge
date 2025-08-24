@@ -42,7 +42,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 
 
-# Generic Architecture of a digital spiking neuron (LU or RU)
+# Generic Architecture of a digital spiking neuron (LU or RU) (Synaptic_Input_Processor.sv)
 
 ![LIFnew_latest_Github](https://github.com/user-attachments/assets/37dc702e-2449-46c3-975b-afa84f0358f1)
 
