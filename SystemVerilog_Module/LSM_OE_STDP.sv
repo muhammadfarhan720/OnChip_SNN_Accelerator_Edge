@@ -215,8 +215,9 @@ always@(negedge clock)
    
  //  select_minus<=select+1;
   select_read<=select+1;
+  weight_new_pos_2<=weight_new;
   //select_read_d1 <= select_read;
-//  select_write<=select_read;
+  //select_write<=select_read;
   //weight_change_d1 <= weight_change;
   //adder_control_d1 <= adder_control;
    if(write==1&rst==0  )
@@ -231,11 +232,6 @@ always@(negedge clock)
 
 //Newly added from STDP design 
 
-always @(posedge clock)
-begin
-    weight_new_pos_2<=weight_new;
-
-end
 //Newly added from STDP design 
 
 //always @(negedge clock) 
