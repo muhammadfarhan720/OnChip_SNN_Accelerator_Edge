@@ -6,6 +6,8 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 ## Structure
 
+
+
 - This repo contains a complete **Spiking Neural Network (SNN)** architecture with 3 layers:
   - **Input Layer**:
     - Contains one input neuron
@@ -17,6 +19,12 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
     - Contains 2 output neurons for binary classification
     - Each neuron includes a **supervised learning engine** for on-chip training
     - For a given sample spike train, whichever of the readout neuron spikes most frequently, that associated target label is chosen as predicted label
+
+
+<img width="1319" height="286" alt="Full_Spiking_Network_Architecture" src="https://github.com/user-attachments/assets/18f4de47-7ace-4c62-b6b3-3536e4a67e78" />
+
+
+
 
 ## Functions
 
@@ -34,10 +42,6 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 
 
-
-# Overall Network Architecture 
-
-<img width="1319" height="286" alt="Full_Spiking_Network_Architecture" src="https://github.com/user-attachments/assets/18f4de47-7ace-4c62-b6b3-3536e4a67e78" />
 
 
 
