@@ -53,7 +53,15 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 - The spiking neurons of both hidden layer and output layer follows similar architecture. The only difference is within the **"Weight Update Learning Engine Type**
 - The weights are imported from the learning engine at once using PISO weight
 - The spikes from the previous layer and from own layer recurrent connections are imported using PISO Spike
-- The hidden layer weight update learning engine contains unsupervised STDP learning Engine 
+- The hidden layer weight update learning engine contains unsupervised STDP learning Engine
+
+# Unsupervised STDP weight update learning engine 
+
+  <a href="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/STDP_GIF_speed_final.gif" target="_blank">
+    <img src="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/STDP_GIF_speed_final.gif" 
+         alt="STDP Learning Animation" 
+         style="width: 100%; max-width: 600px; display: block; margin-top: 10px;">
+  </a>
 
 
 ## 📄 Project Presentation (PDF)
