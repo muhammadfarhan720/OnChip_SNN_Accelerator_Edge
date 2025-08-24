@@ -4,7 +4,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 # Brief Details
 
-## Overall Architecture 
+## Overall Architecture (LSM_reservoir.v)
 
 
 
