@@ -1,4 +1,4 @@
-# OnChip_SNN_Accelerator_Edge
+# OnChip_SNN_Accelerator_Edge (LSM)
 This design presents an on-chip spiking neural network (SNN) neuromorphic accelerator design deploying biologically inspired training for low power Edge-AI classification tasks.
 
 
