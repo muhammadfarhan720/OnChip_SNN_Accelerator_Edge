@@ -4,7 +4,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 # Brief Details
 
-## Overall Architecture (LSM_reservoir.v)
+## Overall Architecture 
 
 
 
@@ -42,7 +42,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 
 
-# Generic Architecture of a digital spiking neuron with learning engine (Synaptic_Input_Processor.sv)
+# Generic Architecture of a digital spiking neuron with learning engine 
 
 ![LIFnew_latest_Github](https://github.com/user-attachments/assets/37dc702e-2449-46c3-975b-afa84f0358f1)
 
