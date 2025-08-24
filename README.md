@@ -62,7 +62,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
          alt="STDP Learning Animation" 
          style="width: 100%; max-width: 600px; display: block; margin-top: 10px;">
   </a>
-
+  <p><em>A visualization of STDP weight update mechanism between 4 pre-synaptic and 1 post-synaptic neuron</em></p>
 
 ## 📄 Project Presentation (PDF)
 
