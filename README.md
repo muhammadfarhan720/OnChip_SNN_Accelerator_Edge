@@ -42,10 +42,6 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 
 
-
-
-
-
 # Generic Architecture of a digital spiking neuron with learning engine  
 
 ![LIFnew_latest_Github](https://github.com/user-attachments/assets/37dc702e-2449-46c3-975b-afa84f0358f1)
@@ -63,7 +59,8 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
          style="width: 100%; max-width: 600px; display: block; margin-top: 10px;">
   </a>
   <p><em>A visualization of STDP weight update mechanism between 4 pre-synaptic and 1 post-synaptic neuron</em></p>
-  
+
+  To implement the above Unsupervised STDP learning in hidden layer neuron learning engine, we designed the following hardware 
 
   <a href="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/SotA_STDP_LE_PL.png" target="_blank">
     <img src="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/SotA_STDP_LE_PL.png" 
@@ -72,7 +69,12 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
   </a>
   <p><em>Block-level RTL diagram of Unsupervised STDP learning logic integrated into a neuromorphic accelerator</em></p>
 
+The Unsupervised learning engine works in following manner :
 
+- The SIPO shift registers load the spike events (1/0) generate by the presynaptic neurons of previous layer and also the comparator generated output from the current neuron itself
+- The contents of the shift registers are passed through the priority encoder to determine timing difference
+- The timing difference sign determines whether weight should be added (Potentiation) or subtracted (Depression)
+- The weight is updated using True-simple-Dual-port RAM memory in a read-then-write mode manner
   
 
 ## 📄 Project Presentation (PDF)
