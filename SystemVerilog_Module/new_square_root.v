@@ -142,20 +142,17 @@ always@(negedge clock)
 //  if(select!=0)
    
  //  select_minus<=select+1;
-   select_reg<=select+1;
-   select_minus<=select_reg;
-   if(write==1&reset==0)
-   dataArray[select_minus]<=weight_new2;
+  select_reg<=select+1;
+  select_minus<=select_reg;
+  weight_new2<=weight_new;
+  time_difference_new<=time_difference;
    
+   if(write==1&reset==0)
+   dataArray[select_minus]<=weight_new2; 
    
   end   
   
-  always @(posedge clock)
-  begin
-  weight_new2<=weight_new;
-  time_difference_new<=time_difference;
-  end
-  
+
 //assign select_minus=select-1;   
  //   Multiplier myslave_multiplier (time_difference, weight_old,weight_new3);
    /*
