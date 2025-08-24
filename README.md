@@ -12,10 +12,10 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
   - **Input Layer**:
     - Contains one input neuron
     - Each input is 16 bits wide (word size)
-  - **Hidden Layer**:
+  - **Hidden Layer (Reservoir Unit)**:
     - Contains 16 recurrent neurons
     - Each neuron includes an **on-chip unsupervised learning engine** for weight updates
-  - **Output Layer**:
+  - **Output Layer (Training Unit)**:
     - Contains 2 output neurons for binary classification
     - Each neuron includes a **supervised learning engine** for on-chip training
     - For a given sample spike train, whichever of the output layer neuron spikes most frequently, that associated target label is chosen as predicted label
