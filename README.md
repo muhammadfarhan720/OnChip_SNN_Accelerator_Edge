@@ -63,6 +63,17 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
          style="width: 100%; max-width: 600px; display: block; margin-top: 10px;">
   </a>
   <p><em>A visualization of STDP weight update mechanism between 4 pre-synaptic and 1 post-synaptic neuron</em></p>
+  
+
+  <a href="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/SotA_STDP_LE_PL.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/SotA_STDP_LE_PL.png" 
+         alt="On-chip local learning" 
+         style="width: 100%; max-width: 600px; display: block; margin-bottom: 20px; margin-top: 10px;">
+  </a>
+  <p><em>Block-level RTL diagram of Unsupervised STDP learning logic integrated into a neuromorphic accelerator</em></p>
+
+
+  
 
 ## 📄 Project Presentation (PDF)
 
