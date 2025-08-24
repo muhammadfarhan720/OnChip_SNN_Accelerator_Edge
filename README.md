@@ -51,7 +51,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 - The spikes from the previous layer and from own layer recurrent connections are imported using PISO Spike
 - The hidden layer weight update learning engine contains unsupervised STDP learning Engine
 
-# Unsupervised STDP weight update learning engine 
+# Unsupervised STDP weight update learning engine (new_square_root.v)
 
   <a href="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/STDP_GIF_speed_final.gif" target="_blank">
     <img src="https://raw.githubusercontent.com/muhammadfarhan720/web-profile/master/files/veriloga/veriloga_day01/STDP_GIF_speed_final.gif" 
