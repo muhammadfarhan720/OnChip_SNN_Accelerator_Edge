@@ -195,7 +195,7 @@ new_square_root new_square (.reset(reset),.write(write), .postsynapSR0(spike), .
 //                 .presynapSR13(parallel_spike_in[12]), .presynapSR14(parallel_spike_in[13]), .presynapSR15(parallel_spike_in[14]), .presynapSR16(parallel_spike_in[15]),.select(select), .clock(clock),.weight_final(weight_new),.weight_old(weight_old),.dataArray(dataArray));
 
 
-always @(posedge clock)
+  always @(negedge clock)
 begin
 if(spike | reset)
 sum_reg<=0;
