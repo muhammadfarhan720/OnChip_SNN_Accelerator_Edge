@@ -35,9 +35,21 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 
 
+# Overall Network Architecture 
+
+<img width="1319" height="286" alt="Full_Spiking_Network_Architecture" src="https://github.com/user-attachments/assets/18f4de47-7ace-4c62-b6b3-3536e4a67e78" />
+
+
+
+
 # Generic Architecture of a digital spiking neuron with learning engine  
 
 ![LIFnew_latest_Github](https://github.com/user-attachments/assets/37dc702e-2449-46c3-975b-afa84f0358f1)
+
+- The spiking neurons of both hidden layer and output layer follows similar architecture. The only difference is within the **"Weight Update Learning Engine Type**
+- The weights are imported from the learning engine at once using PISO weight
+- The spikes to a neuron is 
+
 
 ## 📄 Project Presentation (PDF)
 
