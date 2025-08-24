@@ -52,7 +52,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 
 - The spiking neurons of both hidden layer and output layer follows similar architecture. The only difference is within the **"Weight Update Learning Engine Type**
 - The weights are imported from the learning engine at once using PISO weight
-- The spikes to a neuron is 
+- The spikes from the previous layer and from own layer recurrent connections are imported using PISO Spike  
 
 
 ## 📄 Project Presentation (PDF)
