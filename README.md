@@ -77,7 +77,7 @@ The Unsupervised learning engine works in following manner :
 - The weight is updated using True-simple-Dual-port RAM memory in a read-then-write mode manner
   
 
-## 📄 Project Presentation (PDF)
+## 📄 Project Presentation (PDF) with Vivado Reports
 
 Click the image below to briefly overview the project presentation:
 
