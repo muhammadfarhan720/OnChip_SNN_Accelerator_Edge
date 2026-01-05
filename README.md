@@ -1,12 +1,17 @@
 # OnChip_SNN_Accelerator_Edge (LSM)
 This design presents an on-chip spiking neural network (SNN) neuromorphic accelerator design deploying biologically inspired training for low power Edge-AI classification tasks.
 
+
+
+
 # Paper details
 
 
 - A similar architecture (Not exactly same) details can be found in the following publication :
 
   - **Liu, Y., Yenamachintala, S. S., & Li, P. (2019). Energy-efficient FPGA spiking neural accelerators with supervised and unsupervised spike-timing-dependent-plasticity. ACM Journal on Emerging Technologies in Computing Systems (JETC), 15(3), 1-19**.
+
+
 
 
 # Brief Details
