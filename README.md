@@ -8,6 +8,7 @@ This design presents an on-chip spiking neural network (SNN) neuromorphic accele
 A similar architecture (not identical) and related ideas can be found in the following publication:
 
 - **Liu, Y., Yenamachintala, S. S., & Li, P. (2019). _Energy-efficient FPGA spiking neural accelerators with supervised and unsupervised spike-timing-dependent-plasticity_. ACM Journal on Emerging Technologies in Computing Systems (JETC), 15(3), 1–19.**
+- **M. F. Azmine, R. Li, G. Sharma and Y. Yi, "SpikeSpec: An On-Chip Learning Neuromorphic Accelerator for Spectrum Sensing With Triplet-Boosting and Hardware Friendly Loss Function," in IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 44, no. 9, pp. 3423-3436, Sept. 2025, doi: 10.1109/TCAD.2025.3543439**
 
 ### Repository disclaimer
 
